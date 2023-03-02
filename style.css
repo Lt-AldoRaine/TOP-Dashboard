@@ -1,0 +1,132 @@
+:root {
+    --background-color: #ecfeff;
+    --blue: #0ea5e9;
+    --indigo: #312e81;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: block;
+    background-color: var(--background-color);
+}
+
+section {
+    display: grid;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 
+    "sidebar header header"
+    "sidebar main-content main-content"
+    "sidebar main-content main-content";
+    gap: 5px;
+}
+
+#header {
+    grid-area: header;
+    display: grid;
+    grid-template-areas: 
+    "search profile-settings"
+    "profile-main create-post";
+    padding: 0.5rem 2rem;
+    align-items: center;
+    align-content: center;
+}
+
+#sidebar {
+    display: grid;
+    background-color: var(--blue);
+    grid-area: sidebar;
+}
+
+#main-content {
+    display: grid;
+    grid-area: main-content;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+    background-color: var(--background-color);
+}
+
+#projects .title {
+    margin-bottom: 10px;
+}
+
+.search-bar {
+    display: flex;
+    grid-area: search;
+    align-items: center;
+    margin: 20px;
+}
+
+.profile-settings {
+    display: flex;
+    justify-self: end;
+    grid-area: profile-settings;
+}
+
+.profile-main {
+    display: flex;
+    grid-area: profile-main;
+    grid-template: 1fr 1fr / auto 1fr;
+    gap: 0.5rem 1rem;
+    align-items: center;
+    margin-bottom: 12px;
+    margin-right: 12px;
+}
+
+.create-post {
+    display: flex;
+    justify-self: end;
+    grid-area: create-post;
+    gap: 40px;
+}
+
+.create-post button {
+    background-color: var(--blue);
+    border: none;
+    border-radius: 99999px;
+    height: 40px;
+    width: 100px;
+}
+
+
+
+.card {
+    padding: 15px;
+    margin: 15px;
+    border: solid 1px black;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: 3;
+    grid-row-start: 2;
+}
+
+.card > div {
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+}
+
+
+.profile-pic {
+    background-color: palevioletred;
+}
+
