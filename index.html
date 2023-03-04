@@ -8,157 +8,170 @@
     <title>Document</title>
 </head>
 <body>
-    <main id="container">
-        <div id="sidebar">
+    <div id="container">
+        <aside id="sidebar">
             <div class="nav-head">
                 <img class="dashboard-icon" src="./img/view-dashboard.svg">
-                <h3>Dashboard</h3>
+                <h3 class="dashboard-title">Dashboard</h3>
             </div>
-            <div class="nav-bar">
+            <nav class="nav-bar">
                 <ul class="nav-list nav-style">
                     <li>
-                        <img src="./img/home.svg">
-                        <p>Home</p>
+                        <a title="Home" href="#">
+                            <img src="./img/home.svg">
+                            <p>Home</p>
+                        </a>
                     </li>
                     <li>
-                        <img src="./img/card-account-details-outline.svg">
-                        <p>Profile</p>
+                        <a title="Profile" href="#">
+                            <img src="./img/card-account-details-outline.svg">
+                            <p>Profile</p>
+                        </a>
                     </li>
                     <li>
-                        <img src="./img/message.svg">
-                        <p>Messages</p>
+                        <a title="Messages" href="#">
+                            <img src="./img/message.svg">
+                            <p>Messages</p>
+                        </a>
+                        
                     </li>
                     <li>
-                        <img src="./img/clock-time-three.svg">
-                        <p>History</p>
+                        <a title="History" href="#">
+                            <img src="./img/clock-time-three.svg">
+                            <p>History</p>
+                        </a>
                     </li>
                     <li>
-                        <img src="./img/note-multiple.svg">
-                        <p>Tasks</p>
+                        <a title="Tasks" href="#">
+                            <img src="./img/note-multiple.svg">
+                            <p>Tasks</p>
+                        </a>
                     </li>
                     <li>
-                        <img src="./img/account-group.svg">
-                        <p>Communities</p>
+                        <a title="Communities" href="#">
+                            <img src="./img/account-group.svg">
+                            <p>Communities</p>
+                        </a>
                     </li>
                 </ul>
-            </div>
-            <div class="settings-bar">
+            </nav>
+            <nav class="settings-bar">
                 <ul class="settings-list nav-style">
                     <li>
-                        <img src="./img/cog.svg">
-                        <p>Settings</p>
+                        <a title="Settings" href="#">
+                            <img src="./img/cog.svg">
+                            <p>Settings</p>
+                        </a>
+                        
                     </li>
                     <li>
-                        <img src="./img/help-box.svg">
-                        <p>Support</p>
+                        <a title="Support" href="#">
+                            <img src="./img/help-box.svg">
+                            <p>Support</p>
+                        </a>
+                        
                     </li>
                     <li>
-                        <img src="./img/shield-check.svg">
-                        <p>Privacy</p>
+                        <a title="Privacy" href="#">
+                            <img src="./img/shield-check.svg">
+                            <p>Privacy</p>
+                        </a>
                     </li>
                 </ul>
-            </div>
-        </div>
+            </nav>
+        </aside>
     
         <header id="header">
-            <div class="top-header">
-                <div class="search-bar">
-                    <div class="search-image">
-                        <img src="./img/magnify.svg">
-                    </div>
-                    <form action="#" id="search-form" method="get">
-                        <input class="search-input" type="text" id="search-result" name="search-result">
-                    </form>
-                </div>
-                <div class="profile-settings">
-                    <img src="./img/bell-ring-outline.svg" >
-                    <img class="profile-pic-small" src="...">
+            <div class="search-bar">
+                    <label for="search-field">
+                        <img class="search-image" src="./img/magnify.svg" alt="Search image">
+                    </label>
+                    <input id="search-field" class="search-input" type="text" id="search-result" name="search-result">
+            </div>
+            <div class="profile-settings">
+                    <img class="notification-bell" src="./img/bell-ring-outline.svg" >
+                    <img class="profile-pic-small" src="./img/icon.jpeg">
                     <h4 class="account-name-small">Aldo Raine</h4>
-                </div>
             </div>
             
-            <div class="bottom-header">
-                <div class="profile-main">
-                    <img class="profile-pic-big" src="...">
-                    <div class="greeting">
-                        <h5 class="greeting">Hello</h5>
-                        <h1 class="account-name-big">Aldo Raine</h1>
-                    </div>
-                </div>
-                <div class="create-post">
+            <div class="profile-main">
+                    <img class="profile-pic-big" src="./img/icon.jpeg">
+                    <h5 class="greeting">Hello, </h5>
+                    <h1 class="account-name-big">Aldo Raine</h1>
+            </div>
+            <div class="create-post">
                     <button>New</button>
                     <button>Upload</button>
                     <button>Share</button>
-                </div>
             </div>
             
         </header>
     
         
-        <section id="main-content">
+        <main id="main-content">
             <div class="projects">
                 <div class="projects-heading">Your Projects</div>
                 <div class="project-container">
                     <div class="card">
-                        <h2>Cool Project</h2>
+                        <a title="Calculator" href="#">Calculator</a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper viverra nam libero justo laoreet. Lacus viverra vitae congue eu consequat ac.</p>
                         <div class="interact">
-                            <img src="./img/star-plus-outline.svg">
-                            <img src="./img/eye-plus-outline.svg">
-                            <img src="./img/source-fork.svg">
+                            <img class="action" src="./img/star-plus-outline.svg">
+                            <img class="action" src="./img/eye-plus-outline.svg">
+                            <img class="action" src="./img/source-fork.svg">
                         </div>
                     </div>
                     <div class="card">
-                        <h2>Cool Project</h2>
+                        <a title="Etch-a-Sketch" href="#">Etch-a-Sketch</a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper viverra nam libero justo laoreet. Lacus viverra vitae congue eu consequat ac.</p>
                         <div class="interact">
-                            <img src="./img/star-plus-outline.svg">
-                            <img src="./img/eye-plus-outline.svg">
-                            <img src="./img/source-fork.svg">
+                            <img class="action" src="./img/star-plus-outline.svg">
+                            <img class="action" src="./img/eye-plus-outline.svg">
+                            <img class="action" src="./img/source-fork.svg">
                         </div>
                     </div>
                     <div class="card">
-                        <h2>Cool Project</h2>
+                        <a title="Rock-Paper-Scissors" href="#">Rock-Paper-Scissors</a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper viverra nam libero justo laoreet. Lacus viverra vitae congue eu consequat ac.</p>
                         <div class="interact">
-                            <img src="./img/star-plus-outline.svg">
-                            <img src="./img/eye-plus-outline.svg">
-                            <img src="./img/source-fork.svg">
+                            <img class="action" src="./img/star-plus-outline.svg">
+                            <img class="action" src="./img/eye-plus-outline.svg">
+                            <img class="action" src="./img/source-fork.svg">
                         </div>
                     </div>
                     <div class="card">
-                        <h2>Cool Project</h2>
+                        <a title="Sign-up Form" href="#">Sign-up Form</a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper viverra nam libero justo laoreet. Lacus viverra vitae congue eu consequat ac.</p>
                         <div class="interact">
-                            <img src="./img/star-plus-outline.svg">
-                            <img src="./img/eye-plus-outline.svg">
-                            <img src="./img/source-fork.svg">
+                            <img class="action" src="./img/star-plus-outline.svg">
+                            <img class="action" src="./img/eye-plus-outline.svg">
+                            <img class="action" src="./img/source-fork.svg">
                         </div>
                     </div>
                     <div class="card">
-                        <h2>Cool Project</h2>
+                        <a title="Cool Project" href="#">Cool Project</a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper viverra nam libero justo laoreet. Lacus viverra vitae congue eu consequat ac.</p>
                         <div class="interact">
-                            <img src="./img/star-plus-outline.svg">
-                            <img src="./img/eye-plus-outline.svg">
-                            <img src="./img/source-fork.svg">
+                            <img class="action" src="./img/star-plus-outline.svg">
+                            <img class="action" src="./img/eye-plus-outline.svg">
+                            <img class="action" src="./img/source-fork.svg">
                         </div>
                     </div>
                     <div class="card">
-                        <h2>Cool Project</h2>
+                        <a title="Cool Project" href="#">Cool Project</a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper viverra nam libero justo laoreet. Lacus viverra vitae congue eu consequat ac.</p>
                         <div class="interact">
-                            <img src="./img/star-plus-outline.svg">
-                            <img src="./img/eye-plus-outline.svg">
-                            <img src="./img/source-fork.svg">
+                            <img class="action" src="./img/star-plus-outline.svg">
+                            <img class="action" src="./img/eye-plus-outline.svg">
+                            <img class="action" src="./img/source-fork.svg">
                         </div>
                     </div>
                 </div>
                 <div id="announce-trend">
             
                 </div>
-        </section>
-    </main>
+        </main>
+    </div>
 
 </body>
 </html>
